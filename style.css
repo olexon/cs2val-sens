@@ -1,12 +1,22 @@
-#cs_sens {
-    display: inline-block;
-    margin-bottom: 5px;
+@font-face {
+    font-family: Tahoma;
+    src: url("resources/tahoma.ttf");
 }
 
-#val_sens {
-    display: inline-block;
-    margin-bottom: 5px;
-    float: right;
+@media (min-width: 1330px) {
+    #cs_sens {
+        width: 35%;
+        display: inline-block;
+        margin-bottom: 10px;
+        float: left;
+    }
+
+    #val_sens {
+        width: 35%;
+        display: inline-block;
+        margin-bottom: 10px;
+        float: right;
+    }
 }
 
 body {
@@ -32,13 +42,22 @@ h1 {
 }
 
 input[type="number"] {
-    width: 300px;
+    width: 85%;
     height: 30px;
     background-color: #353536;
     border: none;
     color: white;
     border-radius: 25px;
     text-align: center;
+    float: none;
+
+    display: block;
+
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+    margin-left: auto;
+    margin-right: auto;
 
     padding-left: 5px;
     padding-right: 5px;
